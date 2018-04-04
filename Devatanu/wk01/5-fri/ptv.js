@@ -4,7 +4,7 @@ stops = [
     ["Southern Cross", "Richmond", "South Yarra", "Prahran", "Windsor"]
 ]
 
-var startStation = 'Windsor';
+var startStation = 'Flagstaff';
 var endStation = 'Glenferrie';
 
 var startLine = undefined;

@@ -1,0 +1,21 @@
+/* * {
+    border: solid 0.1px black;
+} */
+
+.main-content{
+    width: 800ps;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+}
+
+.savings, .checking{
+    border: solid black 1px;
+    background-color: palegreen;
+    width: 25%;
+    padding: 5px;
+    margin: 2px;
+}

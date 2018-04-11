@@ -1,13 +1,15 @@
-<div class="list-container">
-    <% if !@movie_response.empty? %>
-        <% @movie_response.each do |response| %>
-            <a href="/movie_details?imdbId=<%= response['imdbID'] %>"> 
-                <p class="movie-card">
-                    <%= "#{response['Title']} (#{response['Year']})" %>
-                </p>
-            </a>
+<div class="page-container">
+    <div class="list-container">
+        <% if !@movie_response.empty? %>
+            <% @movie_response.each do |response| %>
+                <a href="/movie_details?imdbId=<%= response['imdbID']%>"> 
+                    <p class="movie-card">
+                        <%= "#{response['Title']} (#{response['Year']})" %>
+                    </p>
+                </a>
+            <% end %>
+        <% else %>
+            <p>Please enter a search</p>
         <% end %>
-    <% else %>
-        <p>Please enter a search</p>
-    <% end %>
+    </div>
 </div>

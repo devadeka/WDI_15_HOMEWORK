@@ -3,6 +3,10 @@
     font-family: 'Roboto Slab', serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 body{
     width: 100%;
     margin: 0 auto;
@@ -60,16 +64,40 @@ h1{
     background: #DDD;
 }
 
-a{
-    text-decoration: none;
+
+
+.page-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.container{
+.list-container{
     width: 500px;
+    /* border: 0.1px solid black; */
+}
+.detail-container{
+    width: 500px;
+    background: wheat;
+    align-content: center;
+    /* border: 0.1px solid black; */
 }
 
 .header-container{
     flex-direction: column;
     align-content: center;
     width: 500px;
+}
+
+.selected-movie{
+    margin-left: 15px;
+    background: wheat;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.unselected-movie{
+    margin-right: 15px;
+    border-radius: 5px;
+    background: white;
 }

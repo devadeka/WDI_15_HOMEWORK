@@ -1,1 +1,24 @@
-<%= @movie_response %>
+<div class="page-container">
+    <div class="list-container">
+        <% if !@movie_response.empty? %>
+            <% @movie_response.each do |response| %>
+                <a href="/movie_details?imdbId=<%= response['imdbID']%>"> 
+                <% if response['imdbID'] == @movie_details['imdbID'] %>
+                    <p class="movie-card selected-movie">
+                <% else %>
+                <p class="movie-card unselected-movie">
+                <% end %>
+                        <%= "#{response['Title']} (#{response['Year']})" %>
+                    </p>
+                
+                </a>
+            <% end %>
+        <% else %>
+            <p>Please enter a search</p>
+        <% end %>
+    </div>
+    <div class="detail-container">
+        <h1><%= @movie_details["Title"] %></h1>
+        <img src="<%= @movie_details["Poster"] %>"/>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+  <link rel='stylesheet' href='/stylesheets/main.css'>
+  <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>OPEN MOVIES DATABASE</h1>
+      <form action="/movie_list" class="search-container">
+        <input type="text" name="searchString" class="search-txt" placeholder="Movie Name">
+        <input type="submit" class="search-btn" value="Search">
+      </form>
+    </div>
+  </header>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+</body>
+</html>

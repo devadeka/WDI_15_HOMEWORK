@@ -3,6 +3,7 @@
     width: 20px;
     border: 0.1px solid black;
     margin: 0;
+    opacity: 0.8;
 }
 
 .brush{
@@ -13,7 +14,7 @@
 }
 
 .container{
-    width: 205px;
+    width: 202px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

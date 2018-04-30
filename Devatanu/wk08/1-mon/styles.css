@@ -5,6 +5,13 @@
     margin: 0;
 }
 
+.brush{
+    height: 20px;
+    width: 200px;
+    border: 0.1px solid black;
+    margin: 0;
+}
+
 .container{
     width: 205px;
     display: flex;

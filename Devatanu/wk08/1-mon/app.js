@@ -13,3 +13,7 @@ $setColourBtn.on('click', function(event){
     event.preventDefault();
     console.log('click');    
 });
+
+$containerDiv.on('click', function(event){
+    $(event.target).css('background-color','green');
+})

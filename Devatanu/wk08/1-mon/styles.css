@@ -1,0 +1,6 @@
+.brush{
+    height: 20px;
+    width: 20px;
+    border: 0.1px solid black;
+    background: black;
+}

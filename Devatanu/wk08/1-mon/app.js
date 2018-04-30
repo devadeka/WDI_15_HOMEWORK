@@ -14,9 +14,15 @@ $( document ).ready(function() {
         var $square = $('<p class="square"></p>');
         $containerDiv.append($square);
     }
+
+    $setColourTxt.val("mistyrose");
+    $brushDiv.css('background-color',$setColourTxt.val());
+
 });
 
 
-$containerDiv.on('click', function(event){
-    $(event.target).css('background-color',$setColourTxt.val());
+$containerDiv.on('mouseover', function(event){
+    if ($(event.target).hasClass('square')){
+        $(event.target).css('background-color',$setColourTxt.val());
+    }
 })

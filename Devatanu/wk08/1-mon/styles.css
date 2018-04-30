@@ -1,6 +1,13 @@
-.brush{
+.square{
     height: 20px;
     width: 20px;
     border: 0.1px solid black;
-    background: black;
+    margin: 0;
+}
+
+.container{
+    width: 205px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

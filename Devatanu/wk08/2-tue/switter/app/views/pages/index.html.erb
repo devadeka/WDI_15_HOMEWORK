@@ -1,0 +1,11 @@
+<% if @sweets.count >0 %>
+<% @sweets.each do |sweet|%>
+<div class="sweet-card">
+    <h3> <%= sweet.description %> </h3>
+    <hr>
+    <h6> by <%= sweet.user.email%>
+</div>
+<% end %>
+<% else %>
+    <h3> no sweets </h3>
+<% end %>

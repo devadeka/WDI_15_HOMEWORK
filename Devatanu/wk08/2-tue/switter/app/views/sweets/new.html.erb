@@ -1,0 +1,28 @@
+<% if logged_in? %>
+
+<h2><%=current_user.email%></h2>
+
+<form action="/sweets" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="text" placeholder="sweet" name="description">
+    <input type="submit" value="Sweet!!">
+</form>
+
+<% if current_user.sweets.count >0 %>
+<% current_user.sweets.each do |sweet|%>
+<div class="sweet-card">
+    <hr>
+    <h3> <%= sweet.description %> </h3>
+    <h6> by <%= sweet.user.email%>
+    <hr>
+</div>
+<% end %>
+<% else %>
+    <h3> no sweets </h3>
+<% end %>
+
+<% else %>
+
+<h2>LOG IN FIRST</h2>
+
+<% end %>

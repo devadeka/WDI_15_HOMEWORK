@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <h1>SWITTER</h1>
+    <% if logged_in? %>
+      <a href="/sweets/new">Post</a>
+      <a href="/login">Logout</a>
+    <% else %>
+      <a href="/login">Login</a>
+    <% end %>
     <%= yield %>
   </body>
 </html>
